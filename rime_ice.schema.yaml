@@ -23,6 +23,7 @@ schema:
 # abbrev: 默认的缩写取 states 的第一个字符，abbrev 可自定义一个字符
 switches:
   - name: ascii_mode
+    reset: 1  # 默认英文模式（0=中文，1=英文，注释掉则保持上次状态）
     states: [ 中, Ａ ]
   - name: ascii_punct  # 中英标点
     states: [ ¥, $ ]
